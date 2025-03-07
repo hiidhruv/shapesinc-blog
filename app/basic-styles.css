@@ -1,0 +1,31 @@
+/* Basic styles as a fallback if Tailwind fails */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  color: #333;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.header {
+  padding: 1rem 0;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.main {
+  padding: 2rem 0;
+}
+
+.footer {
+  padding: 1rem 0;
+  border-top: 1px solid #eaeaea;
+  text-align: center;
+}
+
