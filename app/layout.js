@@ -42,10 +42,14 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="icon" href="https://imgur.com/qHGWcJZ.png" />
       </head>
-      <body>
-        <Header />
-        <div className="pt-16">{children}</div>
-        <Footer />
+      <body className="bg-white">
+        <div className="min-h-screen flex flex-col">
+          <Header />
+          <main className="flex-grow">
+            {children}
+          </main>
+          <Footer />
+        </div>
       </body>
     </html>
   )

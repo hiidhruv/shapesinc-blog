@@ -40,8 +40,8 @@ export default function Home() {
 
     return (
       <div className="min-h-screen bg-gradient-to-b from-white to-gray-50">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          <header className="mb-16 animate-fade-in">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-12">
+          <header className="mb-8 animate-fade-in">
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl mb-4">Shapes.inc</h1>
             <p className="text-lg text-gray-500 max-w-2xl">
               Creating AI-powered interactions that are engaging, safe, and trustworthy.
@@ -49,7 +49,7 @@ export default function Home() {
           </header>
 
           <main>
-            <section className="mb-16">
+            <section className="mb-12">
               <h2 className="text-2xl font-semibold mb-6">Latest Posts</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {featuredPosts.map((post, index) => (
@@ -63,7 +63,7 @@ export default function Home() {
               if (posts.length === 0) return null
 
               return (
-                <section key={category} className="mb-16">
+                <section key={category} className="mb-12">
                   <div className="flex items-center justify-between mb-6">
                     <h2 className="text-2xl font-semibold capitalize">{category}</h2>
                     <Link
